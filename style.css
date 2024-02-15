@@ -1,0 +1,172 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dua kolom setara */
+    grid-template-areas: 
+        "image color"; /* Menetapkan tata letak kolom menggunakan grid areas */
+    height: 100vh;
+}
+
+.column {
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.image-column {
+    background-image: url('ml.jpg'); /* Ganti dengan path gambar yang sesuai */
+    background-size: cover;
+    background-position: center;
+}
+
+.color-column {
+    background-color: black; /* Ganti dengan warna latar belakang yang sesuai */
+    color: white; /* Ganti dengan warna teks yang sesuai */
+}
+
+
+
+.button-login,
+.button-register {
+    flex: 1;
+    background-color: #1d1928;
+    width: 50%;
+    height: 65px;
+    color: #798590;
+    border: 1px #1c1c24;
+    margin-top: 80px;
+    font-size: 1.3rem;
+}
+
+.button-login:hover,
+.button-register:hover {
+    background-color: #1b1725; /* Warna latar belakang saat di sorot */
+}
+
+.button-login {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: -5px; /* Memberikan efek menyatu dengan tombol sebelah kanan */
+}
+
+.button-register {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -5px; /* Memberikan efek menyatu dengan tombol sebelah kiri */
+}
+
+.button-login.active {
+    background-color: #338f7f; /* Warna hijau saat tombol "Masuk" aktif */
+    color: white;
+}
+
+.button-register.active {
+    background-color: #338f7f; /* Warna hijau saat tombol "Daftar" aktif */
+    color: white;
+}
+
+.cancel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 10px; /* Sesuaikan dengan jumlah margin yang diinginkan */
+}
+
+.close-symbol {
+    font-size: 20px; /* Sesuaikan dengan ukuran font yang diinginkan */
+    cursor: pointer;
+}
+
+
+.inner-column,
+.inner-column1
+{
+    border: 1px solid;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #1d1928;
+    padding: 0 20px 20px 20px;
+}
+
+.inner-column h2,
+.inner-column1 h2
+{
+    font-size:1.7rem;
+}
+
+.inner-column h3,
+.inner-column1 h3
+{
+    color: #798590;
+    font-size: 1.4rem;
+}
+
+.inner-column .text{
+    font-size: 1.4rem;
+}
+
+
+.inner-column input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  
+.inner-column input[type=submit] {
+    width: 100%;
+    background-color: #338f7f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+.inner-column input[type=submit]:hover {
+    background-color: #2f776e;;
+
+  }
+.inner-column1 .text{
+    font-size: 1.4rem;
+}
+
+
+.inner-column1 input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  
+.inner-column1 input[type=submit] {
+    width: 100%;
+    background-color: #338f7f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+.inner-column1 input[type=submit]:hover {
+    background-color: #2f776e;;
+
+  }
+
+ 
